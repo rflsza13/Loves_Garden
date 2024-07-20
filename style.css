@@ -1,0 +1,65 @@
+body, html{
+    background-image: url(wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 8px 8px lightgray;
+    padding: 2% 10% 2%;
+    margin: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: max-content;
+    height: max-content;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 0 0 35px 0;
+}
+
+.texto {
+    width: 235px;
+    height: 30px;
+    margin: 5px 0 10px;margin: 5px 0 10px;
+    border: outset;
+    border-color: rgb(44, 134, 134);
+    border-radius: 5px;
+    box-shadow: 5px 5px lightgray;
+    padding: 0 10px;
+}
+
+.button {
+    width: 260px;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: darkcyan;
+    border: outset;
+    border-color: rgb(44, 134, 134);
+    border-radius: 5px;
+    box-shadow: 5px 5px lightgray;
+    margin: 10px 0 0;
+}
+
+.button:active {
+    background-color: rgb(0, 87, 87);
+    box-shadow: 5px 5px #666;
+    transform: translateY(2px);
+}
