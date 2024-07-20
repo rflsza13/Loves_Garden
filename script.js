@@ -4,29 +4,30 @@ function login() {
     console.log("login :)")
     let user = document.getElementById('txt_user').value;
     let password = document.getElementById('txt_key').value;
+    clear();
 
-    if(user == null || password == null){
-        alert("Dados inválidos!");
-        clear();
-    } else {
-        if(user == "rafael" || user == "Rafael"){
-            if(password == "17952872"){
-                    garden();
-                } else {
-                    alert("Dados inválidos!");
-                    clear();
-                }
-        } else {
-            if (user == "julia" || user == "Julia"){
-                if(password == "102749jf@2024"){
-                    garden();
-                } else {
-                    alert("Dados inválidos!");
-                    clear();
-                }
-            }
-        }
-    }
+    // if(user == null || password == null){
+    //     alert("Dados inválidos!");
+    //     clear();
+    // } else {
+    //     if(user == "rafael" || user == "Rafael"){
+    //         if(password == "17952872"){
+    //                 garden();
+    //             } else {
+    //                 alert("Dados inválidos!");
+    //                 clear();
+    //             }
+    //     } else {
+    //         if (user == "julia" || user == "Julia"){
+    //             if(password == "102749jf@2024"){
+    //                 garden();
+    //             } else {
+    //                 alert("Dados inválidos!");
+    //                 clear();
+    //             }
+    //         }
+    //     }
+    // }
 }
 function clear(){
     document.getElementById("txt_user").value = "";
