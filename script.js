@@ -9,23 +9,8 @@ function login() {
         alert("Dados inválidos!");
         clear();
     } else {
-        if(user == "rafael" || user == "Rafael"){
-            if(password == "17952872"){
-                    garden();
-                } else {
-                    alert("Dados inválidos!");
-                    clear();
-                }
-        } else {
-            if (user == "julia" || user == "Julia"){
-                if(password == "102749jf@2024"){
-                    garden();
-                } else {
-                    alert("Dados inválidos!");
-                    clear();
-                }
-            }
-        }
+        alert("Login Bem Sucedido!");
+        clear();
     }
 }
 function clear(){
