@@ -3,16 +3,11 @@ let usuarios = [sessionStorage.getItem("user1"), sessionStorage.getItem("user2")
 let senhas = [sessionStorage.getItem("senha1"), sessionStorage.getItem("senha2")];
 
 function login() {
-    console.log(usuarios)
     let user = document.getElementById('txt_user').value;
     let password = document.getElementById('txt_key').value;
 
     for(let i = 0; i < usuarios.length; i++){
-        console.log("usuário: ", usuarios[i]);
-        console.log("senha: ", senhas[i]);
-        console.log(user.toLowerCase(), " = ", usuarios[i], "?");
         if(user.toLowerCase() == usuarios[i]){
-            console.log(password.toLowerCase(), " = ", senhas[i], "?");
             if(password == senhas[i]){
                 garden();
                 return;
