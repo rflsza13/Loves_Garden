@@ -8,8 +8,12 @@ function login() {
     let password = document.getElementById('txt_key').value;
 
     for(let i = 0; i < usuarios.length; i++){
+        console.log("usuário: ", usuarios[i]);
+        console.log("senha: ", senhas[i]);
+        console.log(user.toLowerCase(), " = ", usuarios[i], "?");
         if(user.toLowerCase() == usuarios[i]){
-            if(password == senhas[0]){
+            console.log(password.toLowerCase(), " = ", senhas[i], "?");
+            if(password == senhas[i]){
                 garden();
                 return;
             } else {
