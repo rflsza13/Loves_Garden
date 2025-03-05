@@ -1,14 +1,14 @@
 let isLogin = document.getElementById('btn_login');
-let usuarios = [sessionStorage.getItem("user1"), sessionStorage.getItem("user2")];
-let senhas = [sessionStorage.getItem("senha1"), sessionStorage.getItem("senha2")];
+
+let user = JSON.parse(sessionStorage.getItem("user"));
 
 function login() {
     let user = document.getElementById('txt_user').value;
     let password = document.getElementById('txt_key').value;
 
     for(let i = 0; i < usuarios.length; i++){
-        if(user.toLowerCase() == usuarios[i]){
-            if(password == senhas[i]){
+        if(user.toLowerCase() == user[i].usuario){
+            if(password == user[i].senha){
                 garden();
                 return;
             } else {
