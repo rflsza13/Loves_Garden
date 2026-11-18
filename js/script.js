@@ -3,17 +3,18 @@ let isLogin = document.getElementById('btn_login');
 let usuario = JSON.parse(sessionStorage.getItem("user"));
 
 function login() {
-    let user = document.getElementById('txt_user').value;
+    let loginUser = document.getElementById('txt_user').value;
     let password = document.getElementById('txt_key').value;
 
     for(let i = 0; i < usuarios.length; i++){
-        if(user.toLowerCase() == usuario[i].usuario){
+        if(loginUser.toLowerCase() == usuario[i].usuario){
             if(password == usuario[i].senha){
                 garden();
                 return;
             } else {
                 alert("Dados inválidos! \nTente Novamente");
                 clear();
+                garden();
                 return;
             }
         }
